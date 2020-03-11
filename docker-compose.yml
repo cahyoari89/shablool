@@ -1,4 +1,4 @@
-# docker-compose.example.yml
+# docker-compose.yml
 
 app:
   image: ${yourname}/${yourapp}
@@ -7,9 +7,9 @@ app:
   links:
     - mongo
   environment:
-    - ROOT_URL=${http://your.domain.com}
-    - MONGO_URL=mongodb://mongo:27017/meteor
-    - METEOR_SETTINGS=${your.settings.json}
+    - ROOT_URL=${https://quiz.bantubeli.com}
+    - MONGO_URL=mongodb://srv-captain--dbquiz:27017/meteor
+    - METEOR_SETTINGS=${settings.json}
 
 mongo:
   image: mongo:latest
